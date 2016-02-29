@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,8 +28,35 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwr-Mu-xA5">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq8-Vk-oQ8">
+                                        <rect key="frame" x="239" y="0.0" width="123" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="123" id="Nr6-8z-nVI"/>
+                                            <constraint firstAttribute="height" constant="51" id="jED-d3-chb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7d-jt-24y">
+                                        <rect key="frame" x="560" y="16" width="32" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="HBR-84-dPm"/>
+                                            <constraint firstAttribute="height" constant="27" id="kYd-ao-sBG"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <connections>
+                                            <action selector="audioButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6hO-e3-zeW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.10202508220000001" green="0.78580004439999995" blue="0.79284217720000005" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
+                                    <constraint firstItem="dq8-Vk-oQ8" firstAttribute="centerX" secondItem="qwr-Mu-xA5" secondAttribute="centerX" id="628-Fb-6I8"/>
+                                    <constraint firstAttribute="trailing" secondItem="y7d-jt-24y" secondAttribute="trailing" constant="8" id="LCl-Ny-KKC"/>
+                                    <constraint firstItem="y7d-jt-24y" firstAttribute="top" secondItem="qwr-Mu-xA5" secondAttribute="top" constant="16" id="MBI-cr-GVu"/>
+                                    <constraint firstItem="dq8-Vk-oQ8" firstAttribute="centerY" secondItem="qwr-Mu-xA5" secondAttribute="centerY" id="STg-RI-Rvb"/>
                                     <constraint firstAttribute="height" constant="51" id="sEo-aB-lGU"/>
                                 </constraints>
                             </view>
@@ -119,5 +151,6 @@
     <resources>
         <image name="105" width="120" height="120"/>
         <image name="background" width="900" height="600"/>
+        <image name="music" width="48" height="48"/>
     </resources>
 </document>
