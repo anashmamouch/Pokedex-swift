@@ -106,7 +106,6 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="uhb-QA-J8f" id="YGI-7k-Da5"/>
                                             <outlet property="thumbImage" destination="y9i-Aq-tDz" id="eqg-AM-0Qw"/>
-                                            <segue destination="96I-dU-w95" kind="show" identifier="PokemonDetailVC" id="dgR-0B-5ZV"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -143,6 +142,7 @@
                     <connections>
                         <outlet property="collection" destination="cuc-Jh-11R" id="fx9-42-n7e"/>
                         <outlet property="searchBar" destination="usw-p6-754" id="L9x-ji-cO6"/>
+                        <segue destination="96I-dU-w95" kind="show" identifier="PokemonDetailVC" id="1eh-wi-JKK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -160,8 +160,19 @@
                     <view key="view" contentMode="scaleToFill" id="Ayv-Rs-32t" customClass="PokeCell" customModule="Pokedex" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVA-CC-8Cb">
+                                <rect key="frame" x="70" y="78" width="219" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.10202508220000001" green="0.78580004439999995" blue="0.79284217720000005" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="YVA-CC-8Cb" id="Nz7-SC-8Uh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bI2-mk-ae9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

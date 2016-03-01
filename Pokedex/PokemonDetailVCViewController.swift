@@ -10,8 +10,15 @@ import UIKit
 
 class PokemonDetailVCViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    var pokemon: Pokemon!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = pokemon.name
+    
     }
 
 }
