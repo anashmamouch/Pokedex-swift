@@ -106,6 +106,7 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="uhb-QA-J8f" id="YGI-7k-Da5"/>
                                             <outlet property="thumbImage" destination="y9i-Aq-tDz" id="eqg-AM-0Qw"/>
+                                            <segue destination="96I-dU-w95" kind="show" identifier="PokemonDetailVC" id="dgR-0B-5ZV"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -147,6 +148,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="335"/>
+        </scene>
+        <!--Pokemon DetailVC View Controller-->
+        <scene sceneID="oOB-HJ-JDQ">
+            <objects>
+                <viewController id="96I-dU-w95" customClass="PokemonDetailVCViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mlE-1V-ajl"/>
+                        <viewControllerLayoutGuide type="bottom" id="zb1-bZ-M4F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ayv-Rs-32t" customClass="PokeCell" customModule="Pokedex" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.10202508220000001" green="0.78580004439999995" blue="0.79284217720000005" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bI2-mk-ae9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="335"/>
         </scene>
     </scenes>
     <resources>

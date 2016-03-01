@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A840DC131C85E32300246431 /* PokemonDetailVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A840DC121C85E32300246431 /* PokemonDetailVCViewController.swift */; };
 		A8F015541C845B3700491997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F015531C845B3700491997 /* AppDelegate.swift */; };
 		A8F015561C845B3700491997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F015551C845B3700491997 /* ViewController.swift */; };
 		A8F015591C845B3700491997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F015571C845B3700491997 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A840DC121C85E32300246431 /* PokemonDetailVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVCViewController.swift; sourceTree = "<group>"; };
 		A8F015501C845B3700491997 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F015531C845B3700491997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F015551C845B3700491997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F015551C845B3700491997 /* ViewController.swift */,
+				A840DC121C85E32300246431 /* PokemonDetailVCViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			files = (
 				A8F015561C845B3700491997 /* ViewController.swift in Sources */,
 				A8F015541C845B3700491997 /* AppDelegate.swift in Sources */,
+				A840DC131C85E32300246431 /* PokemonDetailVCViewController.swift in Sources */,
 				A8F015881C846CE300491997 /* PokeCell.swift in Sources */,
 				A8F015851C84623900491997 /* Pokemon.swift in Sources */,
 				A8F0158A1C847C5400491997 /* csv.swift in Sources */,
