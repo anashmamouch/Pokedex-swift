@@ -181,6 +181,9 @@
                                             <constraint firstAttribute="height" constant="31" id="sTb-rx-6Gg"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="96I-dU-w95" eventType="touchUpInside" id="X8j-8L-Aqh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.10202508220000001" green="0.78580004439999995" blue="0.79284217720000005" alpha="1" colorSpace="deviceRGB"/>
@@ -209,15 +212,15 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="B4u-8N-tr2">
                                         <rect key="frame" x="0.0" y="48" width="560" height="120"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jnr-I3-UVn">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="120"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="101" translatesAutoresizingMaskIntoConstraints="NO" id="jnr-I3-UVn">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="3Da-jd-Pzn"/>
                                                     <constraint firstAttribute="width" constant="120" id="FkV-xl-o59"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="g0J-Of-NeI">
-                                                <rect key="frame" x="46" y="0.0" width="514" height="120"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="g0J-Of-NeI">
+                                                <rect key="frame" x="120" y="0.0" width="440" height="120"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -411,6 +414,20 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="attackLabel" destination="FWc-yW-5By" id="5FN-CM-kzQ"/>
+                        <outlet property="currentEvoImage" destination="lNq-TP-kw1" id="wJq-J1-Xuu"/>
+                        <outlet property="defenseLabel" destination="4GU-nW-X2d" id="pMC-7B-eQ7"/>
+                        <outlet property="descLabel" destination="g0J-Of-NeI" id="GHX-py-KCu"/>
+                        <outlet property="evoTextLabel" destination="wL2-Ct-E95" id="1Eq-d1-ZKk"/>
+                        <outlet property="heightLabel" destination="zXm-WC-pcS" id="lt2-Nu-hEC"/>
+                        <outlet property="mainImage" destination="jnr-I3-UVn" id="pfG-NP-Aqf"/>
+                        <outlet property="nameLabel" destination="cw8-iw-bMH" id="e5s-US-n35"/>
+                        <outlet property="nextEvoImage" destination="Wxl-TK-LPh" id="gIi-Kn-Nwc"/>
+                        <outlet property="pokeIdLabel" destination="v1C-Qp-XfS" id="AHK-iZ-ufA"/>
+                        <outlet property="typeLabel" destination="6th-P4-bCw" id="8wM-8O-pxu"/>
+                        <outlet property="weightLabel" destination="cK6-xz-wWL" id="ggk-Hl-qMk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bI2-mk-ae9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -418,6 +435,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="101" width="120" height="120"/>
         <image name="105" width="120" height="120"/>
         <image name="110" width="96" height="96"/>
         <image name="113" width="120" height="120"/>
